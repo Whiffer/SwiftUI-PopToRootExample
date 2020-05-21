@@ -13,6 +13,8 @@
 		136C30B52475C15000AFA412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 136C30B42475C15000AFA412 /* Assets.xcassets */; };
 		136C30B82475C15000AFA412 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 136C30B72475C15000AFA412 /* Preview Assets.xcassets */; };
 		136C30BB2475C15000AFA412 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 136C30B92475C15000AFA412 /* LaunchScreen.storyboard */; };
+		136C30C32475C1E600AFA412 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 136C30C22475C1E600AFA412 /* README.md */; };
+		136C30C62475C4AD00AFA412 /* RootPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136C30C52475C4AD00AFA412 /* RootPresentationMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		136C30B72475C15000AFA412 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		136C30BA2475C15000AFA412 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		136C30BC2475C15000AFA412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		136C30C22475C1E600AFA412 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		136C30C42475C36300AFA412 /* SwiftUI-PopToRootExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUI-PopToRootExample.entitlements"; sourceTree = "<group>"; };
+		136C30C52475C4AD00AFA412 /* RootPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresentationMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +45,7 @@
 		136C30A22475C14F00AFA412 = {
 			isa = PBXGroup;
 			children = (
+				136C30C22475C1E600AFA412 /* README.md */,
 				136C30AD2475C14F00AFA412 /* SwiftUI-PopToRootExample */,
 				136C30AC2475C14F00AFA412 /* Products */,
 			);
@@ -59,9 +65,11 @@
 				136C30AE2475C14F00AFA412 /* AppDelegate.swift */,
 				136C30B02475C14F00AFA412 /* SceneDelegate.swift */,
 				136C30B22475C14F00AFA412 /* ContentView.swift */,
+				136C30C52475C4AD00AFA412 /* RootPresentationMode.swift */,
 				136C30B42475C15000AFA412 /* Assets.xcassets */,
 				136C30B92475C15000AFA412 /* LaunchScreen.storyboard */,
 				136C30BC2475C15000AFA412 /* Info.plist */,
+				136C30C42475C36300AFA412 /* SwiftUI-PopToRootExample.entitlements */,
 				136C30B62475C15000AFA412 /* Preview Content */,
 			);
 			path = "SwiftUI-PopToRootExample";
@@ -135,6 +143,7 @@
 			files = (
 				136C30BB2475C15000AFA412 /* LaunchScreen.storyboard in Resources */,
 				136C30B82475C15000AFA412 /* Preview Assets.xcassets in Resources */,
+				136C30C32475C1E600AFA412 /* README.md in Resources */,
 				136C30B52475C15000AFA412 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +157,7 @@
 			files = (
 				136C30AF2475C14F00AFA412 /* AppDelegate.swift in Sources */,
 				136C30B12475C14F00AFA412 /* SceneDelegate.swift in Sources */,
+				136C30C62475C4AD00AFA412 /* RootPresentationMode.swift in Sources */,
 				136C30B32475C14F00AFA412 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI-PopToRootExample/SwiftUI-PopToRootExample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-PopToRootExample/Preview Content\"";
 				DEVELOPMENT_TEAM = 64WN437W3Z;
@@ -295,6 +306,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ForeTheGreen.SwiftUI-PopToRootExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI-PopToRootExample/SwiftUI-PopToRootExample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-PopToRootExample/Preview Content\"";
 				DEVELOPMENT_TEAM = 64WN437W3Z;
@@ -315,6 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ForeTheGreen.SwiftUI-PopToRootExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
