@@ -13,6 +13,9 @@ The best answer to that question (from @malhal) pointed out the key point was th
 used in the stack must use .isDetailLink(false).  This answer works, but instead of passing the bindings 
 via view parameters, this can be simplified by using the environment (as pointed out by @Imthath).
 
+A key to understanding how this works is that when a user taps on a navigation link embedded in a navigation view, 
+the 'isActive' property of this link is automatically set to true by SwiftUI.
+
 This project is an attempt to simplify a working solution to make it better.
 
 This project currently compiles and runs on Xcode Version 11.4.1 (11E503a)
